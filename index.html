@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>Tango Project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	 <!--  CSS files -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/style.less" rel="stylesheet" media="screen" type="text/less"/>
+	
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">  
+</head>
+		<body>
+			<header>
+				<section class="container-fluid campaign-title">
+						<img src="images/logo.jpg " alt="logo" >
+						<h1> Skomponuj swoją przyszłość <br> konkurs na najlepsze tango</h1>
+					
+				</section>
+			</header>
+				<section id="registration-form" class="container ">
+					<h2 class="m-l">Register</h2>
+					<h3>[* Required info messaging, marked ﬁelds are required]</h3>
+					
+					<form role="form" data-toggle="validator">
+  						<div class="row">
+						<div class="form-group">
+							<label for = "firstName">[First name]* </label>
+							<input type="text" class="form-control " id="firstName" placeholder = "[Enter your name]" data-error= "That email address is invalid" required>
+							<div class="help-block with-errors " ></div>
+						</div>	
+						<div class="form-group">
+							<label for="lastName">[Last name]* </label>
+							<input type="text" class="form-control" id="lastName" placeholder="[Enter your last name]" required>
+							<div class="help-block with-errors "></div>
+						</div>
+						</div>
+						<div class="row">
+						<div class="form-group">
+							<label for = "email"> [Email address]* </label>
+							<input type="email" class=" form-control" id="email" placeholder="[Enter your email address]" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  data-error= "That email address is invalid" required>
+							<div class="help-block with-errors "></div>
+						</div>
+						</div>
+						<div class="row">
+						<div class="form-group">
+							<label for="password">[Password]*</label>
+							<input type="password" class="form-control content" id="password" placeholder="[Enter your password]" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<label for = "passwordConfirmation">[Confirm Password]*</label>
+							<input type="password" class="form-control" id="passwordConfirmation" placeholder="[Confirm your password]" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						</div>
+						<div class="row">	
+						<div class="form-group">
+							<label for="addressLine_1">[Address line 1]*</label>
+							<input type="text" class="form-control" id="addressLine-1" placeholder="[Enter your address]" required>
+							<div class="help-block with-errors"></div>
+						</div>	
+						<div class="form-group">
+							<label for="addressLine_2">[Address line 2]*</label>
+							<input type="text" class="form-control " id="addressLine_2" placeholder="[Enter your address]" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						</div>
+						<div class="row">	
+						<div class="form-group">
+							<label for="town_city">[Town/city]*</label>
+							<input type="text" class="form-control " id="town_city" placeholder="[Enter your town/city]" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<label for="post_code">[Post code]*</label>
+							<input type="text" class="form-control " id="post_code" placeholder="[Enter your post code]" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						</div>
+						<div class="form-group">
+							<label for="country">[Country]*</label required>
+							<select class="form-control" id="country" required>
+								<option>[User's country]</option>
+							    <option>Poland</option>
+							    <option>Spain</option>
+							    <option>Malta</option>
+						   	</select>
+						</div>
+						<div class="form-group">
+							<label for="phone">[Phone]*</label>
+							<input type="tel" class="form-control" id="phone" placeholder="[Enter your phone number in.country code]" required>
+							<div class="help-block with-errors"></div>
+						</div>
+												 
+						<div id = "confirmation" >
+							<div class="checkbox">
+	      						<label><input type="checkbox" value="" class="checkbox">[I am over 18 and I agree the <a href="#">Terms & Conditions </a> copy]</label>
+	    					</div>
+    					
+    					<div class="checkbox">
+      						<label><input type="checkbox" value="">[Opt in for campaign messages copy]</label>
+    					</div>
+    						<div class="container submit-button">
+    						<input type="submit" value="[Submit button]" class="submit" [Submit button]/>
+					    </div> 
+					    </div>
+
+					</form>
+				</section>
+
+				
+				
+
+
+				
+
+				
+			
+	
+	
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>	
+
+
+
+<!-- validator script -->
+	<script type="text/javascript" src="js/validator.js"></script>	
+	
+</body>
+</html>
